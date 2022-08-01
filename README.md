@@ -11,7 +11,7 @@ The CSV file needs to follow this format:
 
 **Usage**
 
-The script requires R packages "dplyr" and "randomForest" to run. 
+The script requires R packages "dplyr" and "randomForest" to run. In a Linux command window, run R and run the following:
 
         install.packages("dplyr")
         install.packages("randomForest")
