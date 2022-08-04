@@ -6,8 +6,8 @@ This R script is a general-purpose random forest training and prediction tool. I
 
 The CSV file needs to follow this format:
 - Column #1: The ID (should be unique)
-- Column #2: The sequence class (or a run of "NA" or whatever for prediction mode).
-- Column #3 and onwards: parameters to be used for training and prediction.
+- Column #2: The classification (or a run of "NA" or whatever for prediction mode). There must be at least 10 rows of data for each class for training.
+- Column #3 and onwards: parameters to be used for training and prediction. At least 2 parameters are needed.
 
 **Usage**
 
@@ -42,4 +42,4 @@ Prediction mode:
 
 **Notes**
 
-This script is a wrapper of the R package "randomForest", that provides a command-line interface, automates the training and cross-validations in the training mode, and organize the prediction outcomes so that class scores (i.e. proportion of decision trees voting for a particular class) were juxtaposed to the input data.
+This script is a wrapper of the R package "randomForest", that provides a command-line interface, automates the training and cross-validations in the training mode, and organize the prediction outcomes so that class scores (i.e. proportion of decision trees voting for a particular class) were linked to the input data.
